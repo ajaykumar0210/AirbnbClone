@@ -7,16 +7,14 @@ const listingSchema = new Schema({
         required:true,
     },
     description: String,
+
     image: {
-  filename: {
-    type: String,
-    default: "listingimage"
-  },
-  url: {
-    type: String,
-    default: "https://www.pexels.com/photo/brown-and-green-mountain-view-photo-842711/"
-  }
-},
+        type: String,
+        default: "https://www.pexels.com/photo/vibrant-peacock-displaying-plumage-in-chile-32522678/",
+        set: (v)=> v==="" ? "https://www.pexels.com/photo/vibrant-peacock-displaying-plumage-in-chile-32522678/" : v,
+      // url: String,
+      // filename: String,
+    },
     price: Number,
     location: String,
     country: String,
