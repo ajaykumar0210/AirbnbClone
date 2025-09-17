@@ -1,11 +1,12 @@
 {
   "engines": {
-    "node": "v23.8.0"
+    "node": "v20.x"
   },
-  "name": "major-project",
+  "name": "airbnb-clone",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
